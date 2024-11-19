@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Güncel Kalem - Admin Panel</title>
+    <link rel="icon" type="image/png" href="../images/favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="admin-body">
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="admin-logo">
+                <i class="fas fa-blog"></i>
+                <span>Blog Admin</span>
+            </div>
+            <nav class="admin-nav">
+                <ul class="admin-menu">
+                    <li>
+                        <a href="#" class="active">
+                            <i class="fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Blog Yazıları</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-plus"></i>
+                            <span>Yeni Blog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-comments"></i>
+                            <span>Yorumlar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-users"></i>
+                            <span>Kullanıcılar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                            <span>Ayarlar</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <!-- Top Bar -->
+            <header class="admin-header">
+                <div class="admin-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Ara...">
+                </div>
+                <div class="admin-user">
+                    <div class="admin-user-info">
+                        <span class="admin-name">Admin Kullanıcı</span>
+                        <a href="login.html" class="admin-logout">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Çıkış Yap
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="admin-content">
+                <!-- Stats Cards -->
+                <div class="admin-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Toplam Blog</h3>
+                            <p>125</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Kullanıcılar</h3>
+                            <p>1,240</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Yorumlar</h3>
+                            <p>543</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Görüntülenme</h3>
+                            <p>28,147</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Posts Table -->
+                <div class="admin-table-container">
+                    <div class="table-header">
+                        <h2>Son Bloglar</h2>
+                        <button class="new-post-btn">
+                            <i class="fas fa-plus"></i>
+                            Yeni Blog
+                        </button>
+                    </div>
+                    <div class="admin-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Başlık</th>
+                                    <th>Yazar</th>
+                                    <th>Kategori</th>
+                                    <th>Tarih</th>
+                                    <th>Durum</th>
+                                    <th>İşlemler</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Web Tasarım Trendleri 2024</td>
+                                    <td>Ali Yılmaz</td>
+                                    <td>Teknoloji</td>
+                                    <td>5 Ocak 2024</td>
+                                    <td><span class="status published">Yayında</span></td>
+                                    <td class="actions">
+                                        <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                                        <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Doğa Fotoğrafçılığı İpuçları</td>
+                                    <td>Zeynep Kaya</td>
+                                    <td>Fotoğrafçılık</td>
+                                    <td>3 Ocak 2024</td>
+                                    <td><span class="status draft">Taslak</span></td>
+                                    <td class="actions">
+                                        <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                                        <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Evde Yoga Rehberi</td>
+                                    <td>Ayşe Demir</td>
+                                    <td>Sağlık</td>
+                                    <td>1 Ocak 2024</td>
+                                    <td><span class="status published">Yayında</span></td>
+                                    <td class="actions">
+                                        <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                                        <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Yapay Zeka ve İş Dünyası</td>
+                                    <td>Mehmet Yıldırım</td>
+                                    <td>Teknoloji</td>
+                                    <td>30 Aralık 2023</td>
+                                    <td><span class="status published">Yayında</span></td>
+                                    <td class="actions">
+                                        <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                                        <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Sürdürülebilir Moda</td>
+                                    <td>Selin Aksoy</td>
+                                    <td>Yaşam</td>
+                                    <td>28 Aralık 2023</td>
+                                    <td><span class="status published">Yayında</span></td>
+                                    <td class="actions">
+                                        <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                                        <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Dijital Minimalizm</td>
+                                    <td>Can Özkan</td>
+                                    <td>Teknoloji</td>
+                                    <td>26 Aralık 2023</td>
+                                    <td><span class="status published">Yayında</span></td>
+                                    <td class="actions">
+                                        <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                                        <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Ev Yapımı Doğal Kozmetik</td>
+                                    <td>Deniz Şahin</td>
+                                    <td>Sağlık</td>
+                                    <td>24 Aralık 2023</td>
+                                    <td><span class="status published">Yayında</span></td>
+                                    <td class="actions">
+                                        <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                                        <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Modern Şehir Bahçeciliği</td>
+                                    <td>Ece Yılmaz</td>
+                                    <td>Hobi</td>
+                                    <td>22 Aralık 2023</td>
+                                    <td><span class="status published">Yayında</span></td>
+                                    <td class="actions">
+                                        <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                                        <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Evden Çalışma Verimliliği</td>
+                                    <td>Burak Demir</td>
+                                    <td>İş Yaşamı</td>
+                                    <td>20 Aralık 2023</td>
+                                    <td><span class="status published">Yayında</span></td>
+                                    <td class="actions">
+                                        <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                                        <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Minimalist Ev Dekorasyonu</td>
+                                    <td>Elif Yalın</td>
+                                    <td>Dekorasyon</td>
+                                    <td>18 Aralık 2023</td>
+                                    <td><span class="status published">Yayında</span></td>
+                                    <td class="actions">
+                                        <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                                        <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
