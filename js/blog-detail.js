@@ -14,14 +14,27 @@ document.getElementById('commentForm').addEventListener('submit', function (e) {
 
     // Yeni yorum oluştur
     const newComment = document.createElement('div');
-    newComment.className = 'comment-item';
+    newComment.className = 'comment';
+
+    // Modern yorum tasarımı
     newComment.innerHTML = `
-        <h5>${name}</h5>
-        <p>${comment}</p>
-        <small>
-            <i class="far fa-clock"></i>
-            ${date}
-        </small>
+        <div class="comment-header">
+            <div class="author-info">
+                <div class="author-avatar">
+                    ${name.charAt(0).toUpperCase()}
+                </div>
+                <div class="author-details">
+                    <div class="comment-author">${name}</div>
+                </div>
+            </div>
+            <div class="comment-date">
+                <i class="far fa-clock"></i>
+                ${date}
+            </div>
+        </div>
+        <div class="comment-content">
+            ${comment}
+        </div>
     `;
 
     // Yorumu listeye ekle ve animasyon uygula
@@ -140,3 +153,66 @@ function addNewComment(name, comment, date) {
     // Yorumu sayfaya ekle
     document.querySelector('.comments-list').appendChild(commentDiv);
 }
+
+// Blog detaylarını yükle
+async function loadBlogDetails() {
+    try {
+        const response = await fetch('../data/blogs.json');
+        const data = await response.json();
+
+        // URL'den blog ID'sini al
+        const blogId = window.location.hash.substring(1);
+        const blog = data.blogs.find(b => b.id === blogId);
+
+        if (blog) {
+            // ... mevcut blog içeriği yükleme kodu ...
+
+            // Varolan yorumları yükle
+            if (blog.comments && blog.comments.length > 0) {
+                const commentsList = document.getElementById('commentsList');
+                blog.comments.forEach(comment => {
+                    const commentElement = createCommentElement(comment);
+                    commentsList.appendChild(commentElement);
+                });
+            }
+        }
+    } catch (error) {
+        console.error('Blog detayları yüklenirken hata:', error);
+    }
+}
+
+// Yorum elementi oluştur
+function createCommentElement(comment) {
+    const commentDiv = document.createElement('div');
+    commentDiv.className = 'comment';
+
+    commentDiv.innerHTML = `
+        <div class="comment-header">
+            <div class="author-info">
+                <div class="author-avatar">
+                    ${comment.author.charAt(0).toUpperCase()}
+                </div>
+                <div class="author-details">
+                    <div class="comment-author">${comment.author}</div>
+                </div>
+            </div>
+            <div class="comment-date">
+                <i class="far fa-clock"></i>
+                ${comment.date}
+            </div>
+        </div>
+        <div class="comment-content">
+            ${comment.content}
+        </div>
+    `;
+
+    return commentDiv;
+}
+
+// Sayfa yüklendiğinde blog detaylarını yükle
+document.addEventListener('DOMContentLoaded', loadBlogDetails);
+
+// Mevcut yorum form event listener'ı
+document.getElementById('commentForm').addEventListener('submit', function (e) {
+    // ... mevcut yorum ekleme kodu ...
+});

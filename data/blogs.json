@@ -35,7 +35,7 @@
           },
           {
             "title": "Kullanıcı Deneyimi Odaklı Yaklaşımlar",
-            "content": "Kullanıcı deneyimi (UX), 2024’te tasarımın merkezinde yer alıyor. İşte öne çıkan bazı yaklaşımlar:",
+            "content": "Kullanıcı deneyimi (UX), 2024'te tasarımın merkezinde yer alıyor. İşte öne çıkan bazı yaklaşımlar:",
             "list": [
               {
                 "approach": "Kişiselleştirilmiş Arayüzler",
@@ -346,7 +346,14 @@
             ]
           }
         ]
-      }
+      },
+      "comments": [
+        {
+          "author": "Ahmet Yıldız",
+          "content": "Bildirim yönetimi konusundaki önerilerinizi uyguladım ve gerçekten hayatım değişti. Artık telefonuma değil, ben telefona hükmediyorum!",
+          "date": "27 Aralık 2023 14:20"
+        }
+      ]
     },
     {
       "id": "blog7",
@@ -404,7 +411,14 @@
             ]
           }
         ]
-      }
+      },
+      "comments": [
+        {
+          "author": "Zehra Aydın",
+          "content": "Hindistan cevizi yağı ve shea butter ile yaptığım nemlendirici krem harikalar yaratıyor. Marketlerden aldığım pahalı kremlerden çok daha iyi!",
+          "date": "25 Aralık 2023 19:45"
+        }
+      ]
     },
     {
       "id": "blog8",
@@ -462,7 +476,14 @@
             ]
           }
         ]
-      }
+      },
+      "comments": [
+        {
+          "author": "Melis Kaya",
+          "content": "Balkonda domates yetiştirmeye başladım ve verdiğiniz sulama programı sayesinde ilk hasadımı aldım. Teşekkürler!",
+          "date": "23 Aralık 2023 11:30"
+        }
+      ]
     },
     {
       "id": "blog9",
@@ -520,7 +541,14 @@
             ]
           }
         ]
-      }
+      },
+      "comments": [
+        {
+          "author": "Okan Demir",
+          "content": "Pomodoro tekniğini denedim ve verimliliğim inanılmaz arttı. Ev ofis düzenleme önerileriniz de çok işime yaradı.",
+          "date": "21 Aralık 2023 16:15"
+        }
+      ]
     },
     {
       "id": "blog10",
@@ -578,7 +606,14 @@
             ]
           }
         ]
-      }
+      },
+      "comments": [
+        {
+          "author": "Pınar Yurt",
+          "content": "Nötr renk paleti önerinizi uyguladım ve evim çok daha ferah görünmeye başladı. Dikey alan kullanımı konusundaki ipuçları da çok değerli.",
+          "date": "19 Aralık 2023 13:40"
+        }
+      ]
     }
   ]
 }
