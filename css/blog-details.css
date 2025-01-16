@@ -1,0 +1,116 @@
+/* Yorum bölümü ana container */
+.comments-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Yorum başlığı */
+.comments-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Form container */
+.comment-form-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+/* Form grup */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Input wrapper */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Input icon */
+.input-icon {
+    position: absolute;
+    left: 15px;
+    color: #007bff;
+    font-size: 16px;
+}
+
+/* Input ve textarea stilleri */
+#name, #comment {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+#comment {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#name:focus, #comment:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+    outline: none;
+}
+
+/* Submit button */
+.comment-submit-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.comment-submit-btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,123,255,0.2);
+}
+
+.comment-submit-btn i {
+    font-size: 14px;
+}
+
+/* Placeholder rengi */
+::placeholder {
+    color: #aaa;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+    .comments-container {
+        padding: 15px;
+    }
+    
+    .comment-form-container {
+        padding: 20px;
+    }
+    
+    #name, #comment {
+        font-size: 14px;
+    }
+}
+
+/* Hover efektleri */
+.input-wrapper:hover input,
+.input-wrapper:hover textarea {
+    border-color: #007bff;
+}

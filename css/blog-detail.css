@@ -1,0 +1,237 @@
+/* Yorum bölümü ana container */
+.comments-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Yorum başlığı */
+.comments-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eef2f7;
+}
+
+/* Form container */
+.comment-form {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Form grup */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Input wrapper */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Input icon */
+.input-icon {
+    position: absolute;
+    left: 15px;
+    color: #007bff;
+    font-size: 16px;
+}
+
+/* Input ve textarea stilleri */
+#name, #comment {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+#comment {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#name:focus, #comment:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+    outline: none;
+}
+
+/* Submit button */
+.comment-submit-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.comment-submit-btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,123,255,0.2);
+}
+
+.comment-submit-btn i {
+    font-size: 14px;
+}
+
+.comment-submit-button {
+    background-color: #4a90e2; /* Modern mavi tonu */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-submit-button:hover {
+    background-color: #357abd;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.comment-submit-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-submit-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Placeholder rengi */
+::placeholder {
+    color: #aaa;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+    .comments-container {
+        padding: 15px;
+    }
+    
+    .comment-form-container {
+        padding: 20px;
+    }
+    
+    #name, #comment {
+        font-size: 14px;
+    }
+}
+
+/* Hover efektleri */
+.input-wrapper:hover input,
+.input-wrapper:hover textarea {
+    border-color: #007bff;
+}
+
+.comment {
+    background: #ffffff;
+    border-left: 4px solid #4a90e2;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.comment:hover {
+    transform: translateX(5px);
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.author-avatar {
+    width: 40px;
+    height: 40px;
+    background: #4a90e2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+}
+
+.comment-author {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.comment-date {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.comment-content {
+    color: #475569;
+    line-height: 1.6;
+}
+
+.comments-list {
+    margin-top: 30px;
+}
+
+/* Yorum gönder butonu */
+.comment-submit-button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.comment-submit-button:hover {
+    background-color: #357abd;
+    transform: translateY(-1px);
+}
+
+.comment-submit-button i {
+    font-size: 14px;
+}
+
+/* Yorum içindeki ikonlar için stil */
+.comment-icon {
+    color: #4a90e2;
+    margin-right: 8px;
+}
