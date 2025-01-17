@@ -5,73 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Güncel Kalem - Giriş Yap</title>
     <link rel="icon" type="image/png" href="../images/favicon.svg" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-    <script src="../js/login.js"></script>
+    <style>
+      .login-container {
+        min-height: calc(100vh - 160px);
+        background-color: #f8f9fa;
+      }
+      .card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+      .card-header {
+        background-color: transparent;
+        border-bottom: none;
+        text-align: center;
+        padding-top: 2rem;
+      }
+      .form-floating {
+        margin-bottom: 1rem;
+      }
+      .btn-primary {
+        padding: 0.8rem;
+        font-weight: 500;
+      }
+      .card-footer {
+        background-color: transparent;
+        border-top: none;
+        text-align: center;
+      }
+      .brand-logo {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 1rem;
+      }
+      .social-login {
+        border-top: 1px solid #dee2e6;
+        padding-top: 1.5rem;
+        margin-top: 1.5rem;
+      }
+      .btn-social {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        padding: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+    </style>
   </head>
   <body>
     <div id="header"></div>
 
-    <main class="auth-container">
-      <div class="auth-form">
-        <h2>Giriş Yap</h2>
-        <form>
-          <div class="form-group">
-            <label for="email">E-posta</label>
-            <input type="email" id="email" required />
+    <main class="login-container d-flex align-items-center py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card">
+              <div class="card-header">
+                <img
+                  src="../images/favicon.svg"
+                  alt="Logo"
+                  class="brand-logo"
+                />
+                <h2 class="mb-0">Giriş Yap</h2>
+                <p class="text-muted">Hesabınıza erişmek için giriş yapın</p>
+              </div>
+              <div class="card-body p-4">
+                <form id="loginForm">
+                  <div class="form-floating">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="name@example.com"
+                      required
+                    />
+                    <label for="email">E-posta Adresi</label>
+                  </div>
+                  <div class="form-floating">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="Şifre"
+                      required
+                    />
+                    <label for="password">Şifre</label>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-4"
+                  >
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="rememberMe"
+                      />
+                      <label class="form-check-label" for="rememberMe">
+                        Beni Hatırla
+                      </label>
+                    </div>
+                    <a href="#" class="text-primary text-decoration-none"
+                      >Şifremi Unuttum</a
+                    >
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">
+                    Giriş Yap
+                  </button>
+
+                  <div class="social-login">
+                    <p class="text-center text-muted mb-3">
+                      Veya şununla giriş yapın:
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-outline-dark btn-social"
+                    >
+                      <i class="fab fa-google"></i>
+                      Google ile Giriş Yap
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary btn-social"
+                    >
+                      <i class="fab fa-facebook"></i>
+                      Facebook ile Giriş Yap
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer pb-4">
+                <p class="mb-0">
+                  Hesabınız yok mu?
+                  <a
+                    href="signup.html"
+                    class="text-primary text-decoration-none"
+                    >Üye Olun</a
+                  >
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="password">Şifre</label>
-            <input type="password" id="password" required />
-          </div>
-          <div class="form-options">
-            <label class="remember-me">
-              <input type="checkbox" />
-              <span>Beni Hatırla</span>
-            </label>
-            <a href="#" class="forgot-password">Şifremi Unuttum</a>
-          </div>
-          <button type="submit" class="auth-button">Giriş Yap</button>
-          <p class="auth-link">
-            Hesabınız yok mu? <a href="../pages/signup.html">Üye Olun</a>
-          </p>
-        </form>
+        </div>
       </div>
     </main>
 
     <div id="footer"></div>
 
-    <script>
-      // Header ve Footer'ı yükle
-      async function loadComponents() {
-        try {
-          // Header'ı yükle
-          const headerResponse = await fetch("../components/header.html");
-          const headerHtml = await headerResponse.text();
-          document.getElementById("header").innerHTML = headerHtml;
-
-          // Aktif sayfayı işaretle
-          const currentPage = window.location.pathname.split("/").pop();
-          const navLinks = document.querySelectorAll(".nav-links a");
-          navLinks.forEach((link) => {
-            if (link.getAttribute("href") === currentPage) {
-              link.classList.add("active");
-            } else {
-              link.classList.remove("active");
-            }
-          });
-
-          // Footer'ı yükle
-          const footerResponse = await fetch("../components/footer.html");
-          const footerHtml = await footerResponse.text();
-          document.getElementById("footer").innerHTML = footerHtml;
-        } catch (error) {
-          console.error("Component yüklenirken hata:", error);
-        }
-      }
-
-      // Sayfa yüklendiğinde componentleri yükle
-      document.addEventListener("DOMContentLoaded", loadComponents);
-    </script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="../js/login.js"></script>
   </body>
 </html>
