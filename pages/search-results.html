@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arama Sonuçları - GüncelKalem</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main class="container">
+      <section class="search-results">
+        <h1>Arama Sonuçları</h1>
+        <p id="search-info"></p>
+        <div id="results-container" class="blog-grid"></div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/search-results.js"></script>
+    <script>
+      // Load header and footer
+      fetch("../components/header.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("header-placeholder").innerHTML = data)
+        );
+
+      fetch("../components/footer.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("footer-placeholder").innerHTML = data)
+        );
+    </script>
+  </body>
+</html>
