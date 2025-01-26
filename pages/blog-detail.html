@@ -7,13 +7,10 @@
     <link rel="icon" type="image/png" href="../images/favicon.svg" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/blog-detail.css" />
+    <!-- Bootstrap CSS -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link
       rel="stylesheet"
@@ -41,6 +38,63 @@
             <span class="blog-author">Yazar: Ali Yılmaz</span>
           </div>
         </header>
+        <div class="blog-interactions mb-4 mt-3">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <button class="btn btn-outline-primary like-button">
+                  <i class="far fa-heart"></i> <span class="like-count">0</span>
+                </button>
+              </div>
+              <div class="col-auto">
+                <div class="dropdown share-dropdown">
+                  <button
+                    class="btn btn-outline-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-share-alt"></i> Paylaş
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnFacebook()"
+                        ><i class="fab fa-facebook"></i> Facebook</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnTwitter()"
+                        ><i class="fab fa-twitter"></i> Twitter</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnLinkedIn()"
+                        ><i class="fab fa-linkedin"></i> LinkedIn</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnWhatsApp()"
+                        ><i class="fab fa-whatsapp"></i> WhatsApp</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="blog-content">
           <p>
             Web tasarım dünyası sürekli evrim geçiriyor ve 2024 yılı da yeni
@@ -140,6 +194,63 @@
             <span class="blog-author">Yazar: Zeynep Kaya</span>
           </div>
         </header>
+        <div class="blog-interactions mb-4 mt-3">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <button class="btn btn-outline-primary like-button">
+                  <i class="far fa-heart"></i> <span class="like-count">0</span>
+                </button>
+              </div>
+              <div class="col-auto">
+                <div class="dropdown share-dropdown">
+                  <button
+                    class="btn btn-outline-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-share-alt"></i> Paylaş
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnFacebook()"
+                        ><i class="fab fa-facebook"></i> Facebook</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnTwitter()"
+                        ><i class="fab fa-twitter"></i> Twitter</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnLinkedIn()"
+                        ><i class="fab fa-linkedin"></i> LinkedIn</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnWhatsApp()"
+                        ><i class="fab fa-whatsapp"></i> WhatsApp</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="blog-content">
           <p>
             Doğa fotoğrafçılığı, hem sabır hem de teknik bilgi gerektiren bir
@@ -217,6 +328,63 @@
             <span class="blog-author">Yazar: Ayşe Demir</span>
           </div>
         </header>
+        <div class="blog-interactions mb-4 mt-3">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <button class="btn btn-outline-primary like-button">
+                  <i class="far fa-heart"></i> <span class="like-count">0</span>
+                </button>
+              </div>
+              <div class="col-auto">
+                <div class="dropdown share-dropdown">
+                  <button
+                    class="btn btn-outline-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-share-alt"></i> Paylaş
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnFacebook()"
+                        ><i class="fab fa-facebook"></i> Facebook</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnTwitter()"
+                        ><i class="fab fa-twitter"></i> Twitter</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnLinkedIn()"
+                        ><i class="fab fa-linkedin"></i> LinkedIn</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnWhatsApp()"
+                        ><i class="fab fa-whatsapp"></i> WhatsApp</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="blog-content">
           <p>
             Yoga, hem fiziksel hem de zihinsel sağlığı destekleyen harika bir
@@ -320,6 +488,63 @@
             <span class="blog-author">Yazar: Mehmet Yıldırım</span>
           </div>
         </header>
+        <div class="blog-interactions mb-4 mt-3">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <button class="btn btn-outline-primary like-button">
+                  <i class="far fa-heart"></i> <span class="like-count">0</span>
+                </button>
+              </div>
+              <div class="col-auto">
+                <div class="dropdown share-dropdown">
+                  <button
+                    class="btn btn-outline-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-share-alt"></i> Paylaş
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnFacebook()"
+                        ><i class="fab fa-facebook"></i> Facebook</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnTwitter()"
+                        ><i class="fab fa-twitter"></i> Twitter</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnLinkedIn()"
+                        ><i class="fab fa-linkedin"></i> LinkedIn</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnWhatsApp()"
+                        ><i class="fab fa-whatsapp"></i> WhatsApp</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="blog-content">
           <p>
             Yapay zeka (YZ), iş dünyasının hemen her alanını dönüştürüyor.
@@ -426,6 +651,63 @@
             <span class="blog-author">Yazar: Selin Aksoy</span>
           </div>
         </header>
+        <div class="blog-interactions mb-4 mt-3">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <button class="btn btn-outline-primary like-button">
+                  <i class="far fa-heart"></i> <span class="like-count">0</span>
+                </button>
+              </div>
+              <div class="col-auto">
+                <div class="dropdown share-dropdown">
+                  <button
+                    class="btn btn-outline-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-share-alt"></i> Paylaş
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnFacebook()"
+                        ><i class="fab fa-facebook"></i> Facebook</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnTwitter()"
+                        ><i class="fab fa-twitter"></i> Twitter</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnLinkedIn()"
+                        ><i class="fab fa-linkedin"></i> LinkedIn</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnWhatsApp()"
+                        ><i class="fab fa-whatsapp"></i> WhatsApp</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="blog-content">
           <p>
             Son yıllarda çevreye duyarlılık ve sürdürülebilirlik, moda
@@ -529,6 +811,63 @@
             <span class="blog-author">Yazar: Can Özkan</span>
           </div>
         </header>
+        <div class="blog-interactions mb-4 mt-3">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <button class="btn btn-outline-primary like-button">
+                  <i class="far fa-heart"></i> <span class="like-count">0</span>
+                </button>
+              </div>
+              <div class="col-auto">
+                <div class="dropdown share-dropdown">
+                  <button
+                    class="btn btn-outline-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-share-alt"></i> Paylaş
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnFacebook()"
+                        ><i class="fab fa-facebook"></i> Facebook</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnTwitter()"
+                        ><i class="fab fa-twitter"></i> Twitter</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnLinkedIn()"
+                        ><i class="fab fa-linkedin"></i> LinkedIn</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnWhatsApp()"
+                        ><i class="fab fa-whatsapp"></i> WhatsApp</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="blog-content">
           <p>
             Teknolojinin hayatımızdaki yeri her geçen gün artarken, bu yoğun
@@ -635,6 +974,63 @@
             <span class="blog-author">Yazar: Deniz Şahin</span>
           </div>
         </header>
+        <div class="blog-interactions mb-4 mt-3">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <button class="btn btn-outline-primary like-button">
+                  <i class="far fa-heart"></i> <span class="like-count">0</span>
+                </button>
+              </div>
+              <div class="col-auto">
+                <div class="dropdown share-dropdown">
+                  <button
+                    class="btn btn-outline-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-share-alt"></i> Paylaş
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnFacebook()"
+                        ><i class="fab fa-facebook"></i> Facebook</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnTwitter()"
+                        ><i class="fab fa-twitter"></i> Twitter</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnLinkedIn()"
+                        ><i class="fab fa-linkedin"></i> LinkedIn</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnWhatsApp()"
+                        ><i class="fab fa-whatsapp"></i> WhatsApp</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="blog-content">
           <p>
             Son yıllarda doğal kozmetik ürünlerine olan ilgi arttı. Ancak bu
@@ -732,6 +1128,63 @@
             <span class="blog-author">Yazar: Ece Yılmaz</span>
           </div>
         </header>
+        <div class="blog-interactions mb-4 mt-3">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <button class="btn btn-outline-primary like-button">
+                  <i class="far fa-heart"></i> <span class="like-count">0</span>
+                </button>
+              </div>
+              <div class="col-auto">
+                <div class="dropdown share-dropdown">
+                  <button
+                    class="btn btn-outline-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-share-alt"></i> Paylaş
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnFacebook()"
+                        ><i class="fab fa-facebook"></i> Facebook</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnTwitter()"
+                        ><i class="fab fa-twitter"></i> Twitter</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnLinkedIn()"
+                        ><i class="fab fa-linkedin"></i> LinkedIn</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnWhatsApp()"
+                        ><i class="fab fa-whatsapp"></i> WhatsApp</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="blog-content">
           <p>
             Şehir yaşamı, genellikle doğal yaşamdan uzak bir ortam sunar. Ancak
@@ -831,6 +1284,63 @@
             <span class="blog-author">Yazar: Burak Demir</span>
           </div>
         </header>
+        <div class="blog-interactions mb-4 mt-3">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <button class="btn btn-outline-primary like-button">
+                  <i class="far fa-heart"></i> <span class="like-count">0</span>
+                </button>
+              </div>
+              <div class="col-auto">
+                <div class="dropdown share-dropdown">
+                  <button
+                    class="btn btn-outline-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-share-alt"></i> Paylaş
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnFacebook()"
+                        ><i class="fab fa-facebook"></i> Facebook</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnTwitter()"
+                        ><i class="fab fa-twitter"></i> Twitter</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnLinkedIn()"
+                        ><i class="fab fa-linkedin"></i> LinkedIn</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnWhatsApp()"
+                        ><i class="fab fa-whatsapp"></i> WhatsApp</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="blog-content">
           <p>
             Evden çalışma, doğru stratejilerle ofis ortamından daha verimli
@@ -926,6 +1436,63 @@
             <span class="blog-author">Yazar: Elif Yalın</span>
           </div>
         </header>
+        <div class="blog-interactions mb-4 mt-3">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <button class="btn btn-outline-primary like-button">
+                  <i class="far fa-heart"></i> <span class="like-count">0</span>
+                </button>
+              </div>
+              <div class="col-auto">
+                <div class="dropdown share-dropdown">
+                  <button
+                    class="btn btn-outline-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-share-alt"></i> Paylaş
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnFacebook()"
+                        ><i class="fab fa-facebook"></i> Facebook</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnTwitter()"
+                        ><i class="fab fa-twitter"></i> Twitter</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnLinkedIn()"
+                        ><i class="fab fa-linkedin"></i> LinkedIn</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        onclick="shareOnWhatsApp()"
+                        ><i class="fab fa-whatsapp"></i> WhatsApp</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="blog-content">
           <p>
             Minimalist dekorasyon, sadece eşyaları azaltmak değil, yaşam
@@ -1048,6 +1615,10 @@
 
     <!-- JavaScript dosyaları -->
     <script src="../js/blog-detail.js"></script>
+    <!-- Bootstrap JS ve Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
     <script>
       // Header ve Footer'ı yükle
       async function loadComponents() {
@@ -1079,6 +1650,55 @@
 
       // Sayfa yüklendiğinde componentleri yükle
       document.addEventListener("DOMContentLoaded", loadComponents);
+
+      // Beğeni fonksiyonu
+      document.querySelectorAll(".like-button").forEach((button) => {
+        button.addEventListener("click", function () {
+          const countSpan = this.querySelector(".like-count");
+          let count = parseInt(countSpan.textContent);
+
+          if (this.classList.contains("liked")) {
+            this.classList.remove("liked");
+            this.querySelector("i").classList.replace("fas", "far");
+            countSpan.textContent = count - 1;
+          } else {
+            this.classList.add("liked");
+            this.querySelector("i").classList.replace("far", "fas");
+            countSpan.textContent = count + 1;
+          }
+        });
+      });
+
+      // Paylaşım fonksiyonları
+      function shareOnFacebook() {
+        const url = encodeURIComponent(window.location.href);
+        window.open(
+          `https://www.facebook.com/sharer/sharer.php?u=${url}`,
+          "_blank"
+        );
+      }
+
+      function shareOnTwitter() {
+        const url = encodeURIComponent(window.location.href);
+        const text = encodeURIComponent(document.title);
+        window.open(
+          `https://twitter.com/intent/tweet?url=${url}&text=${text}`,
+          "_blank"
+        );
+      }
+
+      function shareOnLinkedIn() {
+        const url = encodeURIComponent(window.location.href);
+        window.open(
+          `https://www.linkedin.com/sharing/share-offsite/?url=${url}`,
+          "_blank"
+        );
+      }
+
+      function shareOnWhatsApp() {
+        const url = encodeURIComponent(window.location.href);
+        window.open(`https://wa.me/?text=${url}`, "_blank");
+      }
     </script>
   </body>
 </html>
